@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+    background-color: #1B1B1B;
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #D6D6D6;
+}
+
+.table__head {
+    height: 80px;
+
+}
+
+.table__cell--head:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+.table__cell--head:last-child {
+    border-radius: 0 8px 0 0;
+    padding: 25px;
+}
+
+.table__body {
+    border: 1px solid #252525;
+}
+
+.table__row--body {
+    height: 48px;
+    cursor: pointer;
+}
+
+.table__row--body:first-child {
+    height: 48px;
+    cursor: auto;
+}
+
+
+.table__row--body:hover {
+    background-color: #3D2C1C;
+}
+
+.table__cell {
+    text-align: start;
+    border-bottom: 1px solid #252525;
+}
+
+.table__cell--body {
+    width: 100px;
+}
+
+.table__row {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #1E1E1E;
+}
+
+.table__row--body:nth-child(1) {
+    background-color: #252525;
+}
+
+.table__cell:first-child {
+    padding-left: 33px;
+    width: 100px;
+}
+
+.table__cell:nth-child(2) {
+    text-align: end;
+}
+
+.table__cell:nth-child(6) {
+    padding-right: 24px;
+    text-align: end;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B3B3B3;
+}
+
+.text__list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D6D6D6;
+}
+
+.text__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #D6D6D6;
+}
+
+.menu__wrapper {
+    display: flex;
+    justify-content: end;
+}
+.menu {
+    background-color: transparent;
+    border: 1px solid #6C6C6C;
+    border-radius: 6px;
+    max-width: 248px;
+    width: 100%;
+    padding: 6px 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu__img {
+    width: 11px;
+}
+
+.menu__slide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 26px;
+    width: 100%;
+    border-radius: 0 0 6px 6px;
+    border: 1px solid #6C6C6C;
+    background-color: #1E1E1E;
+    text-align: center;
+    opacity: 0;
+}
+
+.menu:focus .menu__slide {
+    opacity: 9;
+}
+
+.text__menu--slide {
+    padding: 3px 0;
+}
+
+.text__menu {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #D6D6D6;
+}
+
+.text__menu--slide:hover {
+    background-color: #3D2C1C;
+}

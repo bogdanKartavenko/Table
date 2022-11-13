@@ -62,6 +62,14 @@
     width: 100px;
 }
 
+.table__row--body:last-child .table__cell--body:first-child {
+    border-radius: 0 0 0 8px ;
+}
+
+.table__row--body:last-child .table__cell--body:last-child {
+    border-radius: 0 0 8px 0 ;
+}
+
 .table__row {
     font-weight: 400;
     font-size: 14px;

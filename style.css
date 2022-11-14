@@ -48,7 +48,7 @@
     border-bottom: 1px solid #252525;
 }
 
-.table__row--body:last-child {
+.table__row:last-child .table__cell {
     border-bottom: none;
 }
 
@@ -160,13 +160,3 @@
     overflow: hidden;
     box-shadow: 0 0 0 1px #252525;
 }
-/* .table__body {
-    border: 1px solid #252525;
-    box-shadow: 0 0 0 1px #252525;
-} */
-
-/* tr:last-child td:first-child {
-    border-radius: 0 0 0 8px;
-    border-left: 1px solid #252525;
-    border-bottom: 1px solid #252525;
-} */
